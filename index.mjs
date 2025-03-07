@@ -1,6 +1,7 @@
 import express from "express";
 import morgan from "morgan";
 import db from "./db/conn.mjs";
+import cors from "cors";
 
 // Imported Routes
 import productEntries from "./routes/productRoute.mjs";
@@ -15,6 +16,7 @@ const app = express();
 //Middlewares
 app.use(morgan("dev"));
 app.use(express.json());
+app.use(cors());
 
 //Route Endpoints
 app.use("/api/product", productEntries);
