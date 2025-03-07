@@ -5,6 +5,7 @@ import db from "./db/conn.mjs";
 // Imported Routes
 import productEntries from "./routes/productRoute.mjs";
 import users from "./routes/userRoute.mjs";
+import cartRoutes from "./routes/cartRoute.mjs";
 
 // Main Port
 const PORT = process.env.PORT || 5000;
@@ -18,6 +19,7 @@ app.use(express.json());
 //Route Endpoints
 app.use("/api/product", productEntries);
 app.use("/api/users", users);
+app.use("/api/cart", cartRoutes);
 
 // Routes for my checking routes
 app.get("/", (req, res) => {
