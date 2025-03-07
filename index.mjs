@@ -7,6 +7,7 @@ import cors from "cors";
 import productEntries from "./routes/productRoute.mjs";
 import users from "./routes/userRoute.mjs";
 import cartRoutes from "./routes/cartRoute.mjs";
+import orders from "./routes/orderRoute.mjs";
 
 // Main Port
 const PORT = process.env.PORT || 5000;
@@ -22,6 +23,7 @@ app.use(cors());
 app.use("/api/product", productEntries);
 app.use("/api/users", users);
 app.use("/api/cart", cartRoutes);
+app.use("/api/orders", orders);
 
 // Routes for my checking routes
 app.get("/", (req, res) => {
