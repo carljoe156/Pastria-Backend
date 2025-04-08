@@ -9,4 +9,7 @@ router.get("/seed", productController.seed);
 // Gets and returns all entires
 router.get("/", productController.getEntries);
 
+// Get and returns specific entry
+router.get("/:id", productController.getProductById);
+
 export default router;
