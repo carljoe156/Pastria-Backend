@@ -5,76 +5,134 @@ async function seed(req, res) {
   try {
     await Product.create([
       {
-        name: "Product One",
-        description:
-          "lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        category: "Type One",
-        price: 100,
+        name: "Chocolate Croissant",
+        description: "A buttery, flaky pastry filled with rich chocolate.",
+        category: "Croissants",
+        price: 5.99,
         imageUrl:
-          "https://images.unsplash.com/photo-1529778873920-4da4926a72c2?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1718897266472-5b7229ebdd3d?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
-        name: "Product Two",
-        description:
-          "lorem Ipsum is simply dummy text of the printing and typesetting industry",
-        category: "Test Two",
-        price: 150,
+        name: "Vanilla Cream Puff",
+        description: "A delicate puff pastry filled with smooth vanilla cream.",
+        category: "Cream Puffs",
+        price: 3.99,
         imageUrl:
-          "https://images.unsplash.com/photo-1611267254323-4db7b39c732c?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1733486249979-2db54b268986?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
-        name: "Product Three",
-        description:
-          " lorem ipsum dolor sit amet, consectetur adipiscing elit sed diam non proident.",
-        category: "Test Three",
-        price: 90,
+        name: "Apple Cinnamon Roll",
+        description: "A warm, gooey cinnamon roll with apple filling.",
+        category: "Cinnamon Rolls",
+        price: 4.49,
         imageUrl:
-          "https://plus.unsplash.com/premium_photo-1661546038828-20acff2c69aa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1645995575875-ea6511c9d127?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
-        name: "Product Four",
-        description:
-          " lorem ipsum je lope elit sed diam non proident nolo moor as wer you tee writing town.",
-        category: "Test Four",
-        price: 200,
+        name: "Lemon Meringue Tart",
+        description: "A zesty lemon filling topped with fluffy meringue.",
+        category: "Tarts",
+        price: 6.99,
         imageUrl:
-          "https://images.unsplash.com/photo-1606509769472-7660d4a478ac?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1534148206-f085ba17015a?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
-        name: "Product Five",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        category: "Test Five",
-        price: 250,
+        name: "Blueberry Muffin",
+        description: "Freshly baked muffin filled with juicy blueberries.",
+        category: "Muffins",
+        price: 2.99,
         imageUrl:
-          "https://images.unsplash.com/photo-1603349136288-95d87bd0a268?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1722251172903-cc8774501df7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
-        name: "Product Six",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut viverra erat. Nulla facilisi.",
-        category: "Test Six",
-        price: 180,
+        name: "Raspberry Danish",
+        description: "A buttery Danish pastry filled with tangy raspberry jam.",
+        category: "Danishes",
+        price: 3.79,
         imageUrl:
-          "https://images.unsplash.com/photo-1548802673-380ab8ebc7b7?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1624300654594-517c05bacb8d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
-        name: "Product Seven",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies lacinia nibh, et mollis nulla fermentum ac.",
-        category: "Test Seven",
-        price: 130,
+        name: "Chocolate Chip Cookies",
+        description: "Soft and chewy cookies loaded with chocolate chips.",
+        category: "Cookies",
+        price: 1.99,
         imageUrl:
-          "https://images.unsplash.com/photo-1612903910048-36cb9e119674?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://plus.unsplash.com/premium_photo-1670895802097-c9749ab2dc5f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
-        name: "Product Eight",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod, arcu in gravida dictum, felis tortor tincidunt ipsum.",
-        category: "Test Eight",
-        price: 220,
+        name: "Peach Galette",
+        description: "A rustic pastry with fresh peaches and a buttery crust.",
+        category: "Galettes",
+        price: 5.49,
         imageUrl:
-          "https://images.unsplash.com/photo-1606715895281-ccdf0143f198?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://images.unsplash.com/photo-1591538017406-0d85d0803530?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        name: "Pecan Pie",
+        description: "A rich and sweet pie filled with pecans and syrup.",
+        category: "Pies",
+        price: 7.99,
+        imageUrl:
+          "https://images.unsplash.com/photo-1598360482137-fe99f7c5d0f8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        name: "Strawberry Shortcake",
+        description:
+          "A light sponge cake layered with fresh strawberries and whipped cream.",
+        category: "Cakes",
+        price: 8.49,
+        imageUrl:
+          "https://images.unsplash.com/photo-1558234469-50fc184d1cc9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        name: "Chocolate Fudge Cake",
+        description:
+          "A rich and moist chocolate cake topped with fudge frosting.",
+        category: "Cakes",
+        price: 9.99,
+        imageUrl:
+          "https://images.unsplash.com/photo-1736109850901-a7e3869400b2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        name: "Cinnamon Sugar Donut",
+        description: "A sweet donut coated with cinnamon sugar.",
+        category: "Donuts",
+        price: 2.49,
+        imageUrl:
+          "https://plus.unsplash.com/premium_photo-1676573295464-cd20bfd68744?q=80&w=1899&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        name: "Almond Biscotti",
+        description: "Crunchy, twice-baked Italian cookies with almonds.",
+        category: "Biscotti",
+        price: 3.29,
+        imageUrl:
+          "https://images.unsplash.com/photo-1685397166172-0308e96ee012?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        name: "Raisin Scone",
+        description: "A buttery scone with plump raisins, perfect with tea.",
+        category: "Scones",
+        price: 3.59,
+        imageUrl:
+          "https://images.unsplash.com/photo-1678025227914-d8cb55aa6cb0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        name: "Maple Pecan Danish",
+        description: "A flaky Danish pastry with maple syrup and pecans.",
+        category: "Danishes",
+        price: 4.79,
+        imageUrl:
+          "https://plus.unsplash.com/premium_photo-1675871810369-f6b5322f9643?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        name: "Honey Baked Brioche",
+        description: "A sweet, soft brioche pastry drizzled with honey.",
+        category: "Brioche",
+        price: 4.29,
+        imageUrl:
+          "https://images.unsplash.com/photo-1552056413-b8b5eed0170b?q=80&w=1929&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
     ]);
     res.send("successful").status(200);
