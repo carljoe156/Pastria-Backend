@@ -5,6 +5,7 @@ import cors from "cors";
 
 // Imported Routes
 import productEntries from "./routes/productRoute.mjs";
+import merchEntries from "./routes/merchRoute.mjs";
 import users from "./routes/userRoute.mjs";
 import cartRoutes from "./routes/cartRoute.mjs";
 import orders from "./routes/orderRoute.mjs";
@@ -21,6 +22,7 @@ app.use(cors());
 
 //Route Endpoints
 app.use("/api/product", productEntries);
+app.use("/api/merch", merchEntries);
 app.use("/api/users", users);
 app.use("/api/cart", cartRoutes);
 app.use("/api/orders", orders);
